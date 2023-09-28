@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 441px;
+  min-width: 320px;
+  margin: auto;
+  margin-block: 15%;
+  border: 1.4px solid gray;
+}
+
+form {
+  background-color: #fff;
+
+  .todo-form-input {
+    width: 80%;
+    border: none;
+  }
+
+  legend {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid gray;
+
+      span {
+        color: #616060;
+      }
+
+      span:last-child {
+        cursor: pointer;
+      }
+    }
+  }
+
+  #todo {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  #todo:focus {
+    outline: none;
+  }
+}
+
+.container-footer {
+  text-align: center;
+
+  button {
+    margin-block-end: 1rem;
+    border: none;
+    background: transparent;
+    color: gray;
+    cursor: pointer;
+
+    :hover {
+      color: red;
+    }
+  }
+}
+
+.container-section {
+  width: 100%;
+  text-align: center;
+
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    border-bottom: 1px solid gray;
+    padding-block: 0.9rem;
+  }
+
+  .todo-form {
+    width: 80%;
+  }
+
+  .todo-form-input {
+    width: 100%;
+    border: none;
+    text-align: left;
+  }
+
+  .todo-form-input:focus {
+    outline: none;
+  }
+
+  .button {
+    border: none;
+    background: transparent;
+    color: gray;
+    cursor: pointer;
+
+    :hover {
+      color: black;
+    }
+  }
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+
+  li {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .trash-delete {
+      cursor: pointer;
+    }
+  }
+}
